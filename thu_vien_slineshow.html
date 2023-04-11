@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="slineShow/css/css_slineShow.css" type="text/css">
+<link rel="stylesheet" media="(max-width:767px)" href="slineShow/css/css_slineShow_mobile.css" type="text/css">
+<link rel="stylesheet" media="(min-width:768px)" href="slineShow/css/CSS_slineshow_tablets.css" type="text/css">
+<link rel="stylesheet" media="(min-width:992px)" href="slineShow/css/CSS_slineshow_desktop.css" type="text/css">
+
+<!--NỘI DUNG-->
+<body>
+
+<h2 >Hình ảnh đẹp của du lịch Hà Tĩnh</h2>
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="slineShow/img_dulichhatinh/kdtnd.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="slineShow/img_dulichhatinh/kdttp.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="slineShow/img_dulichhatinh/kg.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="slineShow/img_dulichhatinh/tphtt.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="slineShow/img_dulichhatinh/vp.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="slineShow/img_dulichhatinh/vp.png" style="width:100%"> <!--TRÙNG HÌNH-->
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+
+<!--thư viện hình ảnh-->
+<div class="img">
+  <div class="galery">
+    <a target="_blank" href="slineShow/img_dulichhatinh_2/768x512/Bien-Hoanh-Son-768x512.png">
+      <img src="slineShow/img_dulichhatinh_2/768x512/Bien-Hoanh-Son-768x512.png" atl="Biển Hoành Sơn" width="100%">
+    </a>
+    <div class="decs">Biển Hoành Sơn</div>
+  </div>
+    <div class="galery">
+      <a target="_blank" href="slineShow/img_dulichhatinh_2/768x512/Bien-Thien-Cam-768x512.png">
+        <img src="slineShow/img_dulichhatinh_2/768x512/Bien-Thien-Cam-768x512.png" atl="Biển Thiên Cầm" width="100%">
+      </a>
+      <div class="decs">Biển Thiên Cầm</div>
+  </div>
+  <div class="galery">
+    <a target="_blank" href="slineShow/img_dulichhatinh_2/768x512/Bien-Xuan-Thanh-Ha-Tinh-768x512.png">
+      <img src="slineShow/img_dulichhatinh_2/768x512/Bien-Xuan-Thanh-Ha-Tinh-768x512.png" atl="Biển Xuân Thành" width="100%">
+    </a>
+    <div class="decs">Biển Xuân Thành</div>
+</div>
+<div class="galery">
+  <a target="_blank" href="slineShow/img_dulichhatinh_2/768x512/Chua-Huong-Tich-768x512.png">
+    <img src="slineShow/img_dulichhatinh_2/768x512/Chua-Huong-Tich-768x512.png" atl=">Chùa Hương Tích" width="100%">
+  </a>
+  <div class="decs">Chùa Hương Tích</div>
+</div>
+<div class="galery">
+  <a target="_blank" href="slineShow/img_dulichhatinh_2/768x512/Khu-di-tich-Nguyen-Du_768x512.png">
+    <img src="slineShow/img_dulichhatinh_2/768x512/Khu-di-tich-Nguyen-Du_768x512.png" atl="Khu di tích Nguyễn Du" width="100%">
+  </a>
+  <div class="decs">Khu di tích Nguyễn Du</div>
+</div>
+<div class="galery">
+  <a target="_blank" href="slineShow/img_dulichhatinh_2/768x512/Nui-Hong-Linh-768x512.png">
+    <img src="slineShow/img_dulichhatinh_2/768x512/Nui-Hong-Linh-768x512.png" atl="Núi Hồng Lĩnh" width="100%">
+  </a>
+  <div class="decs">Núi Hồng Lĩnh</div>
+</div>
+<div class="galery">
+  <a target="_blank" href="slineShow/img_dulichhatinh_2/768x512/Vu-Quang-Ha-Tinh-1-768x512.png">
+    <img src="slineShow/img_dulichhatinh_2/768x512/Vu-Quang-Ha-Tinh-1-768x512.png" atl="Khu bảo tồn Quốc Gia Vũ Quang" width="100%">
+  </a>
+  <div class="decs">Khu bảo tồn Quốc Gia Vũ Quang</div>
+</div>
+
+
+</div>
+
+
+<!--JavaScrip-->
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    
+
+  
+</body>
+</html>

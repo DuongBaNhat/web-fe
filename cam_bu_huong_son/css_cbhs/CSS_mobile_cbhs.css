@@ -1,0 +1,6 @@
+/* MEDIA QUERY   */
+/* 1 - Đặt chế độ Grid View mặc định cho mobile (col 100%) - mobile first */
+[class*="col-"]{
+      
+    width:100%;
+    }

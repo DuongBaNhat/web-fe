@@ -1,0 +1,81 @@
+
+/* Xóa luồng*/
+.row::after {
+    content:"";
+    clear:both;
+    display:table;
+    
+}
+
+/* Tính Padding và Border vào trong một phần tử*/
+*{
+    box-sizing: border-box;
+    }
+
+/* Thêm các container và/hoặc class để biểu diễn dạng hàng (row) và cột (col) - thêm trong file html*/
+
+/* BỐ CỤC CHI TIẾT TỪNG PHẦN */
+/* 1 - header*/
+#id_header1 a {
+    float: left;
+    padding: 0% 0% 0% 2%; 
+    }
+#id_header2 a{
+   
+    float:right;
+    padding: 0% 2% 0% 0%;
+}
+#id_header a{
+    color:white;
+    text-decoration: none;
+    }
+
+#id_header{
+   
+    background-color: #75787c;
+    padding: 3% 0% 2% 0%;
+    color:white;
+    }
+
+  /* 2 - Banner */
+#id_banner{
+    position: relative;
+    background-repeat: no-repeat;
+    padding: 0% 0% 0% 2%;
+    
+    }
+    /* 3 - Nội dung */
+#id_body img {
+    padding:8% 0% 0% 0%;
+}
+#id_img_body > div{
+    padding: 0% 2% 0% 0%;
+}
+#id_body #id_img_body{
+  padding:0% 0% 2% 2%;
+}
+
+#id_body #id_para_body{
+    padding: 2% 2% 1% 2%;
+}
+    /* 4 - footer */
+
+#id_footer > div{
+    padding:0% 2% 4% 0%;
+
+}
+#id_footer{
+    padding: 0% 0% 0% 2%;
+}
+/* MEDIA QUERY   */
+/* 1 - Đặt chế độ Grid View mặc định cho mobile (col 100%) - mobile first */
+[class*="col-"]{
+   
+    float:left;
+   
+    }
+
+
+
+
+

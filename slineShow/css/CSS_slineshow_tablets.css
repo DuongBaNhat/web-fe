@@ -1,0 +1,8 @@
+/* 2 - tablets */
+@media only screen and (min-width:768px){
+    .galery{
+        width:49%;
+      }
+
+   
+    } 
